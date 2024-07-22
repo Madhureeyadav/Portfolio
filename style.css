@@ -1,0 +1,196 @@
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav a {
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+}
+
+.nav-link.active {
+    color: green;
+}
+
+
+/* Navigation Bar */
+
+.nav {
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* Responsive font size */
+    z-index: 1000;
+    /* Ensure nav is on top */
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-item {
+    padding: 1rem 2rem;
+    /* Adjust spacing */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.font1 {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    /* Responsive font size */
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    text-shadow: 4px 4px #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/About.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.About {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.About img {
+    aspect-ratio: 4/3;
+}
+
+.skill img {
+    aspect-ratio: 4/3;
+    width: 100%;
+    object-fit: contain;
+    filter: blur();
+}
+
+.h12 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.foot {
+    font-size: 20px;
+    color: black;
+}
+
+.foot a {
+    text-decoration: none;
+    color: black;
+}
+
+.foot li {
+    list-style-type: none;
+}
+
+.icon img {
+    aspect-ratio: 3/3;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.contact-container {
+    width: 100%;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form-content {
+    width: 100%;
+}
+
+footer {
+    background-color: #f8f9fa;
+    /* Light background for the footer */
+}
+
+footer .h3 {
+    font-size: 1.5rem;
+    /* Adjust font size for heading */
+}
+
+footer img {
+    vertical-align: middle;
+    /* Align images with text */
+}
+
+@media (max-width: 575.98px) {
+    .contact-form {
+        padding: 10px;
+    }
+    .contact-form-content {
+        padding: 5px;
+    }
+    .About {
+        flex-direction: column;
+        padding: 2px
+    }
+    footer {
+        padding: 2rem;
+        /* Adjust padding on extra-small screens */
+    }
+}
+
+@media (max-width: 991px) {
+    .about {
+        flex-direction: column;
+    }
+    .About {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .font1 {
+        font-size: 1.5rem;
+        /* Responsive font size */
+    }
+    .intro {
+        font-size: 1.2rem;
+        /* Responsive font size */
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        overflow: scoll;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-item {
+        padding: 1px;
+    }
+    .nav-link {
+        font-size: 1rem;
+    }
+}
